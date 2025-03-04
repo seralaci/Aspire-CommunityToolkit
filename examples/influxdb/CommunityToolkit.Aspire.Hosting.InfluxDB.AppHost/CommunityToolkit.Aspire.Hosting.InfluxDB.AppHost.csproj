@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="$(AspireAppHostSdkVersion)"/>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>2b40b9f8-ac52-43aa-a80f-773da4ff13b3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\CommunityToolkit.Aspire.Hosting.InfluxDB\CommunityToolkit.Aspire.Hosting.InfluxDB.csproj" IsAspireProjectResource="false"/>
+    <ProjectReference Include="..\CommunityToolkit.Aspire.Hosting.InfluxDB.Api\CommunityToolkit.Aspire.Hosting.InfluxDB.Api.csproj" />
+  </ItemGroup>
+
+</Project>
+

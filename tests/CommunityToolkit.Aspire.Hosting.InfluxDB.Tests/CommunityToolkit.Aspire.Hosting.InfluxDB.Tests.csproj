@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\examples\influxdb\CommunityToolkit.Aspire.Hosting.InfluxDB.AppHost\CommunityToolkit.Aspire.Hosting.InfluxDB.AppHost.csproj" />
+    <ProjectReference Include="..\..\src\CommunityToolkit.Aspire.Hosting.InfluxDB\CommunityToolkit.Aspire.Hosting.InfluxDB.csproj" />
+    <ProjectReference Include="..\CommunityToolkit.Aspire.Testing\CommunityToolkit.Aspire.Testing.csproj" />
+  </ItemGroup>
+
+</Project>
