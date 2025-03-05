@@ -1,1 +1,23 @@
 #nullable enable
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.BucketParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource?
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.BucketParameter.set -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.ConnectionStringExpression.get -> Aspire.Hosting.ApplicationModel.ReferenceExpression!
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.OrganizationParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource?
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.OrganizationParameter.set -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.PasswordParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource!
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.PasswordParameter.set -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.PrimaryEndpoint.get -> Aspire.Hosting.ApplicationModel.EndpointReference!
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.TokenParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource!
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.TokenParameter.set -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.UserNameParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource?
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.UserNameParameter.set -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.InfluxServerResource(string! name, Aspire.Hosting.ApplicationModel.ParameterResource? userName, Aspire.Hosting.ApplicationModel.ParameterResource! password, Aspire.Hosting.ApplicationModel.ParameterResource! token, Aspire.Hosting.ApplicationModel.ParameterResource? organization, Aspire.Hosting.ApplicationModel.ParameterResource? bucket, Aspire.Hosting.ApplicationModel.ParameterResource? retention) -> void
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.RetentionParameter.get -> Aspire.Hosting.ApplicationModel.ParameterResource?
+CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource.RetentionParameter.set -> void
+Aspire.Hosting.InfluxResourceBuilderExtensions
+static Aspire.Hosting.InfluxResourceBuilderExtensions.AddInfluxDB(this Aspire.Hosting.IDistributedApplicationBuilder! builder, string! name, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? token = null, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? userName = null, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? password = null, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? organization = null, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? bucket = null, Aspire.Hosting.ApplicationModel.IResourceBuilder<Aspire.Hosting.ApplicationModel.ParameterResource!>? retention = null, int? port = null) -> Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>!
+static Aspire.Hosting.InfluxResourceBuilderExtensions.WithConfigBindMount(this Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>! builder, string! source, bool isReadOnly = false) -> Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>!
+static Aspire.Hosting.InfluxResourceBuilderExtensions.WithConfigVolume(this Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>! builder, string? name = null, bool isReadOnly = false) -> Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>!
+static Aspire.Hosting.InfluxResourceBuilderExtensions.WithDataBindMount(this Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>! builder, string! source, bool isReadOnly = false) -> Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>!
+static Aspire.Hosting.InfluxResourceBuilderExtensions.WithDataVolume(this Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>! builder, string? name = null, bool isReadOnly = false) -> Aspire.Hosting.ApplicationModel.IResourceBuilder<CommunityToolkit.Aspire.Hosting.InfluxDB.InfluxServerResource!>!
